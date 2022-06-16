@@ -13,6 +13,18 @@ public class Client {
         private String commune;
         private String pays;
 
+        public Addresse() {
+        }
+
+        public Addresse(String avenue, String numero, String quartier, String ville, String commune, String pays) {
+            this.avenue = avenue;
+            this.numero = numero;
+            this.quartier = quartier;
+            this.ville = ville;
+            this.commune = commune;
+            this.pays = pays;
+        }
+
         public String getAvenue() {
             return avenue;
         }
