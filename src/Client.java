@@ -1,6 +1,8 @@
+import java.util.List;
+
 public class Client {
     // association client-factures
-    private Facture[] factures;
+    private List<Facture> factures;
 
     private String nom;
 
@@ -74,11 +76,13 @@ public class Client {
         }
     }
 
-    public Facture[] getFactures() {
+    public List<Facture> getFactures() {
+
         return factures;
     }
 
-    public void setFactures(Facture[] factures) {
+    public void setFactures(List<Facture> factures) {
+
         this.factures = factures;
     }
 
@@ -88,5 +92,10 @@ public class Client {
 
     public void setNom(String nom) {
         this.nom = nom;
+    }
+
+    @Override
+    public String toString() {
+        return this.nom;
     }
 }

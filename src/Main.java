@@ -1,9 +1,13 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
         Facture facture1 = new Facture();
         Facture facture2 = new Facture();
         Facture facture3 = new Facture();
         Facture facture4 = new Facture();
+        Facture facture5 = new Facture();
 
         // instanciation de la classe client
         Client client = new Client();
@@ -19,11 +23,12 @@ public class Main {
         facture4.setClient(client);
 
         // la liste des factures
-        Facture[] facturesKatele = new Facture[4];
-        facturesKatele[0] = facture1;
-        facturesKatele[1] = facture2;
-        facturesKatele[2] = facture3;
-        facturesKatele[3] = facture4;
+        List<Facture> facturesKatele = new ArrayList();
+        facturesKatele.add(facture1);
+        facturesKatele.add(facture2);
+        facturesKatele.add(facture3);
+        facturesKatele.add(facture4);
+        facturesKatele.add(facture5);
 
         // attribution des factures via le setter setFactures(Factures[])
         client.setFactures(facturesKatele);

@@ -28,4 +28,9 @@ public class Facture {
     public void setDate(Date date) {
         this.date = date;
     }
+
+    @Override
+    public String toString() {
+        return this.client.toString() + " " + this.getNumero() + " " + this.getDate();
+    }
 }
