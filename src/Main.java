@@ -14,7 +14,14 @@ public class Main {
         client.setNom("Katele");
 
         // creation de l'addresse grace à la classe interne Addresse()
-        Client.Addresse addresse = client.new Addresse("Femme Katangaise", "Lubumbashi", "5", "Salama", "Lubumbashi", "RDC");
+        Client.Addresse addresse = client.new Addresse(
+                "Femme Katangaise",
+                "Lubumbashi",
+                "5",
+                "Salama",
+                "Lubumbashi",
+                "RDC"
+        );
 
         // attribution des factures au client
         facture1.setClient(client);
@@ -32,6 +39,5 @@ public class Main {
 
         // attribution des factures via le setter setFactures(Factures[])
         client.setFactures(facturesKatele);
-
     }
 }
